@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>
+		GEMAK
+	</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%- include ('../Partials/librerias.html') %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cards.css"/>
+	 <!-- GENERAR EXCEL -->
+	 <script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script><!-- GENERAR EXCEL -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script><!-- GENERAR EXCEL -->
+  <!-----------------------------------------------     FECHAS MOMENTS     ---------------------------------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+	<script type="text/javascript" src="js/Alumnos/Control/Control.js"></script>
+</head>
+
+<body>
+	<%- include ('../Partials/menunavegacion.html')%>
+	<br>
+	<!-----------------------------------------     SUB-MENU      ---------------------------------------------------------------->
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#Control">Control</a></li>
+		<li><a data-toggle="tab" href="#Expediente">Expediente</a></li>
+		<li><a data-toggle="tab" href="#Pagos">Pagos escolares</a></li>
+	</ul>
+	<!-----------------------------------------   div-Contenido  ----------------------------------------------------------------->
+	<div class="tab-content">
+		<!-----------------------------------------   Tab Uno  ----------------------------------------------------------------->
+		<div id="Control" class="tab-pane fade in active">
+            <%- include ('./Control/TarjetasContro.html')%>
+		</div>
+		<!-----------------------------------------   Tab Dos  ----------------------------------------------------------------->
+		<div id="Expediente" class="tab-pane fade">
+			 
+		</div>
+		<!-----------------------------------------   Tab Tres  ----------------------------------------------------------------->
+		<div id="Pagos" class="tab-pane fade">
+			 
+
+		</div>
+		 
+	</div>
+	<!-----------------------------------------   Fin de Tab  ----------------------------------------------------------------->
+ 
+	
+ <!-- Libreta de Modales -->
+    <%- include ('./Control/modalRegistro.html') %>
+    <%- include ('./Control/modalEliminar.html') %>
+	<%- include ('./Control/modalEditar.html') %>
+	
+	
+</body>
+</html>

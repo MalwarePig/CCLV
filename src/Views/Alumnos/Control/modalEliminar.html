@@ -1,0 +1,48 @@
+ <!-- Modal Sin elementos -->
+ <div class="modal fade" id="modalEliminarAlumno" tabindex="-1" role="dialog" aria-labelledby="RecoleccionExito"
+ aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+     <div class="modal-content">
+         <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Registro</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="form-group col-md-4">
+                <input required type="text" id="barAlumnoBuscar" class="form-control" placeholder="Nómbre / matricula..."
+                  name="barAlumnoBuscar" autocomplete="off">
+              </div>
+              <div class="form-group col-md-1">
+                <button type="button"  name="getProducts" class="btn btn-secondary"
+                  onclick="BuscarAlumno()">Buscar</button>
+              </div>
+
+              <!------------------------------ TABLA -------------------------------------->
+                <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded"
+                style="width:96%; height:350px; overflow: scroll;">
+                    <table class="table table-condensed table-hover" id="TablaEliminarAlumno">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-2">Matricula</th> 
+                            <th>Nombre</th> 
+                            <th class="col-sm-2">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    </table>
+                </div>
+          </div>
+       
+         <div class="modal-footer">
+            <button type="button" class="btn btn-light" onclick="RegistrarAlumno()" >Guardar</button>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+     </div>
+ </div>
+</div>
+
+ 
