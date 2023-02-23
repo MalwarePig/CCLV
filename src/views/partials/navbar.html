@@ -1,0 +1,58 @@
+<nav class="flex items-center justify-between flex-wrap bg-railway-900 p-2 mt-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/dashboard">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+              </svg>
+        </a>
+        <a href="/dashboard"><span class="font-semibold text-xl tracking-tight">Inicio</span></a>
+ 
+    </div>
+    <div class="block lg:hidden ">
+        <button id='boton'
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white ">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div id='menu' class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-md lg:flex-grow">
+            <a href="/Alumnos" class="block mt-4 lg:inline-block lg:mt-0 text-slate-300 hover:text-white ml-8">
+                Alumnos
+            </a>
+            <a href="/Maestro"
+                class="block mt-4 lg:inline-block lg:mt-0 text-slate-300 hover:text-white mr-4 ml-8">
+                Maestros
+            </a>
+            <a href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-slate-300 hover:text-white ml-8">
+                Materias
+            </a>
+            <a href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-slate-300 hover:text-white ml-8">
+                Administración
+            </a>
+
+        </div>
+        <div class="mr-10">
+            <a href="/"
+                class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-red-500 hover:border-transparent hover:text-black hover:bg-red-500 mt-4 lg:mt-0">Salir</a>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const boton = document.querySelector('#boton');
+    const menu = document.querySelector('#menu');
+
+    boton.addEventListener('click', () => {
+        console.log('click')
+        menu.classList.toggle('hidden')
+    })
+
+</script>

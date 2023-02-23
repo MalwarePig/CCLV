@@ -1,0 +1,56 @@
+<nav class="flex items-center justify-between flex-wrap bg-railway-900 p-2 mt-2">
+    <div class="flex items-center flex-shrink-0 text-white mr-6 ml-24">
+        <a href="/dashboard">
+ 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere" width="40"
+                height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 17.6l-2 -1.1v-2.5" />
+                <path d="M4 10v-2.5l2 -1.1" />
+                <path d="M10 4.1l2 -1.1l2 1.1" />
+                <path d="M18 6.4l2 1.1v2.5" />
+                <path d="M20 14v2.5l-2 1.12" />
+                <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                <line x1="12" y1="12" x2="14" y2="10.9" />
+                <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                <line x1="12" y1="12" x2="12" y2="14.5" />
+                <line x1="12" y1="18.5" x2="12" y2="21" />
+                <path d="M12 12l-2 -1.12" />
+                <line x1="6" y1="8.6" x2="4" y2="7.5" />
+            </svg>
+        </a>
+        <a href="/dashboard"><span class="font-semibold text-xl tracking-tight">GlλdoSys</span></a>
+
+    </div>
+    <div class="block lg:hidden ">
+        <button id='boton'
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white ">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div id='menu' class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-md lg:flex-grow">
+
+        </div>
+        <div class="mr-10">
+            <a href="/"
+                class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-red-500 hover:border-transparent hover:text-black hover:bg-red-500 mt-4 lg:mt-0">Salir</a>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const boton = document.querySelector('#boton');
+    const menu = document.querySelector('#menu');
+
+    boton.addEventListener('click', () => {
+        console.log('click')
+        menu.classList.toggle('hidden')
+    })
+
+</script>

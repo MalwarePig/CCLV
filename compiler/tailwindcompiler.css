@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+
+.InputGeneral{
+    @apply w-full rounded-lg border-gray-200 p-1 pr-12 text-sm shadow-sm;
+}

@@ -1,0 +1,9 @@
+//Instalar
+npm install -D tailwindcss
+
+//Para configurar 
+npx tailwindcss init  
+
+//Compilar
+npx tailwindcss -i compiler/tailwindcompiler.css -o src/public/css/styles.css --watch
+
